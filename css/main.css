@@ -1,0 +1,274 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,300");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+body {
+  font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #E9EAEE;
+}
+
+h1, h2, h3 {
+	font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h2 {
+	color: #bc6026;
+}
+
+svg {
+  height: 1em;
+}
+
+nav .brand {
+  fill: white;
+}
+
+nav .brand:hover {
+  fill: #d87e28;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style-type: none;
+  padding: .5em;
+}
+
+.navbar a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-variant: small-caps; /*links rendered in small caps p.small*/
+}
+
+.navbar a:hover {
+  color: #d87e28;
+  text-decoration: none;
+}
+
+.navbar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  background-color: #181c22;
+  margin: 0px;
+  border-radius: 0px;
+  min-height: auto;
+}
+
+.navbar ul {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 15px;
+}
+
+#cart {
+  position: absolute;
+  right: 30px;
+  font-size: 1.2em;
+  top: 8px;
+}
+
+.header {
+  padding-top: 3em;
+  width: 100vw;
+}
+
+#headline {
+  font-style: italic;
+}
+
+#info {
+  background-color: #dbdce3;
+  margin: 0px;
+  width: 100vw;
+}
+
+.row svg {
+  fill: #d87e28;
+  height: 1.5em; /* too small at 1em */
+}
+
+.row div {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+#map {
+  border-radius: 5px;
+}
+
+#menu h2 {
+  padding-left: 15px;
+}
+
+#menu div {
+  margin: 0px;
+}
+
+dl .row div {
+  padding-left: 0px;
+}
+
+dt, dd {
+  text-align: left;
+  margin: 0px;
+}
+
+dd {
+  padding-left: 1em;
+  font-style: italic;
+}
+
+#story img {
+  border-radius: 5px;
+  max-height: 300px;
+  margin-left: 1em;
+}
+
+#story {
+  background-color: #dbdce3;
+  width: 100vw;
+  margin-top: 27em; /* fixes background */
+  padding-bottom: 1em;
+}
+
+#footer .row div {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 1em;
+}
+
+div#footer.container {
+  border-top-style: solid;
+  border-top-color: #d87e28;
+  width: 100vw;
+  background-color: #afb3c2;
+  border-top-width: 3px;
+}
+
+.beanPic, .growerPic {
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.beanInfo {
+  text-align: center;
+}
+
+#total {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.fa-minus-square {
+  margin-right: 5px;
+}
+
+.fa-plus-square {
+  margin-left: 5px;
+}
+
+#quant {
+  width: 140px;
+  display: block;
+  margin: 0 auto;
+}
+
+#cartButton {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.buttonDiv {
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .navbar {
+    background-color: rgba(24, 28, 34, 0.8);
+  }
+
+  .navbar li {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #cart {
+    top: 15px;
+  }
+
+  .header {
+    background-image: url("../img/background-sm.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    text-align: right;
+    min-height: 550px;
+    padding-right: 60px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  #headerPic {
+    min-height: 225px;
+  }
+
+  #headline {
+    font-size: 1.25em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+  }
+
+  #headline .hidden-xs {
+    height: 1.5em;
+    margin-bottom: 1em;
+    fill: #d87e28;
+  }
+
+  #story img {
+    max-height: 400px;
+  }
+
+  #icons p {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    background-image: url("../img/background-md.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .header h1 {
+    font-size: 4em;
+  }
+
+  #story {
+    margin-top: 15em; /* fixes background */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    background-image: url("../img/background-lg.jpg");
+    /*background-repeat: no-repeat;*/
+  }
+
+}

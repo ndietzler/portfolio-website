@@ -1,0 +1,27 @@
+<div class="container header" id="headerPic">
+	<h1>Dawg Coffee Orders</h1>
+	<div class="hidden-xs">
+	 	Supplying Beans to Sleepy Huskies Since 2015
+	</div>
+</div>
+
+<div class="container">
+	<div class="form-inline pull-right">
+		<br>
+	    <label for="search"><i class="fa fa-search"></i></label>
+	    <input name="query" placeholder="Search" id="search" ng-model="searchQuery" ng-keyUp="getProducts()">
+	</div>
+
+	<table class="table">
+	    <tr>
+	        <th>Name</th>
+	        <th>Description</th>
+	        <th>Price/Pound</th>
+	    </tr>
+	    <tr ng-repeat="product in products | filter:searchQuery | orderBy:'name'">
+	        <td><a ui-sref="bean({id: product.id})">{{product.name}}</a></td>
+	        <td>{{product.description}}</td>
+	        <td>{{product.price | currency:"$":2}}</td>
+	    </tr>
+	</table>
+</div>
